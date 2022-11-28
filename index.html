@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+     <!--icons-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    <title>NACHO</title>
+</head>
+<body>
+    <header>
+        <div class="animales">
+            
+       </div>
+    </header>
+    <div class="countdown">
+        <p>FALTAN:</p>
+        <div id="clock"></div>
+        <script src="countdown.js"></script>
+    </div>
+    <div class="bajocunt">
+        <div class="audiodiv">
+            <audio controls .mejs-container autoplay src="./dragonball-z-chala-head-chala-cancion-intro-hd.mp3"></audio >
+        </div> 
+    </div>
+    <main> 
+        <img src="./IMG/Group16.png" alt="">
+        <p>TE ESPERAMOS PARA FESTEJAR JUNTOS EL 15 DE ENERO DE 13 A 17 HS,  HACE CLICK PARA SABER COMO LLEGAR</p>
+        <a class="boton" target="_blank"  href="https://www.google.com/maps/dir//Euskadi+3897,+Ingeniero+Budge,+Provincia+de+Buenos+Aires/@-34.7304206,-58.4669396,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x95bcce79d0749495:0xa51dcaa05c695bf2!2m2!1d-58.4669396!2d-34.7304206">COMO LLEGAR</a>
+    </main>
+    <main> 
+        <img src="./IMG/Group16.png" alt="">
+        <p>NO OLVIDES CONFIRMAR ASISTENCIA</p>
+        <a class="boton" target="_blank"  href="https://docs.google.com/forms/d/e/1FAIpQLSeg6_e6k1FytuXsBAiMoJBKXThIX-81afoSynxiPD19RfJ6Ig/viewform?usp=sf_link">COMO LLEGAR</a>
+    </main>
+    
+      <footer>
+        <div class="contenido">
+         <div>
+             <p>Hecho con &hearts; <br>
+             &#169 <b>Si,quiero!</b>, invitaciones inteligentes.
+             <br> Todos los derechos reservados.</p>
+         </div>
+            
+         <div class="contenido-list">
+             <ul>
+                 <li><a target="_blank" href="https://www.instagram.com/siquiero.arg/"><i class="bi bi-instagram"></i></a></li>
+                 <li><a target="_blank" href="https://www.facebook.com/Invitaciones-web-112187784608681"><i class="bi bi-facebook"></i></a></li>
+                 <li><a target="_blank" href="mailto:siquiero.invitaciones@gmail.com"><i class="bi bi-envelope"></i></a></li>
+               </ul>
+         </div>
+        </div>
+        
+     </footer>
+     <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script></body>
+    </html>
